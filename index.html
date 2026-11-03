@@ -1,6 +1,22 @@
-<!DOCTYPE HTML><html lang="pl-PL"><head>    <meta charset="utf-8">    <title>Baradziej</title>    <style>        body {            margin: 0;            padding: 12px 37px;            font-family: "Times New Roman", serif;            background: white;        }                /* Styl nawigacji */        .katalog-nawigacja {            margin-bottom: 15px;            font-family: Arial, sans-serif;        }        .katalog-nawigacja ul {            list-style-type: disc;            padding-left: 20px;        }        .katalog-nawigacja li {            margin-bottom: 3px;        }        .katalog-nawigacja a {            color: blue;            text-decoration: underline;            cursor: pointer;        }
+<!DOCTYPE HTML><html lang="pl-PL"><head>    <meta charset="utf-8">    <title>Baradziej</title>    <style>        body {            margin: 0;            padding: 20px 40px;            font-family: "Times New Roman", serif;            background: white;            color: #000;
+        }                /* Styl nawigacji */        .katalog-nawigacja {            margin-bottom: 20px;            font-family: Arial, sans-serif;            font-size: 14px;            background: #f9f9f9;            padding: 10px 15px;            border: 1px solid #ddd;            border-radius: 4px;        }        .katalog-nawigacja ul {            list-style-type: disc;            padding-left: 20px;            margin: 5px 0 0 0;        }        .katalog-nawigacja li {            margin-bottom: 3px;        }        .katalog-nawigacja a {            color: blue;            text-decoration: underline;            cursor: pointer;        }
 
-        .ramka {            position: relative;            width: 100%;            height: 265px;            margin-bottom: 23px;            background: #c0c0c0;            border: 1px solid black;            box-sizing: border-box;            padding: 45px 10px 20px 10px;        }
+        .sekcja-gora {            margin-bottom: 30px;            line-height: 1.6;        }
+
+        /* Style list z Zadania 4 w wąskiej ramce na środku */
+        .sekcja-zadan {
+            width: 800px;
+            max-width: 100%;
+            margin: 30px auto;
+            padding: 25px;
+            background: #c0c0c0;
+            border: 1px solid #000;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .ramka {            position: relative;            width: 100%;            height: 265px;            margin-bottom: 25px;            background: #c0c0c0;            border: 1px solid black;            box-sizing: border-box;            padding: 45px 10px 20px 10px;        }
         .tytul {            position: absolute;            top: 48px;            left: 10px;            font-size: 25px;            font-weight: bold;        }
         .srodek {            left: 50%;            transform: translateX(-50%);        }
         .prawa {            left: auto;            right: 10px;        }
@@ -15,12 +31,13 @@
     </style>
 </head><body>
 
+    <!-- ================= GÓRA ================= -->
     <div id="gora"></div>
     <div class="katalog-nawigacja">        
         góra strony:<br>
         <ul>            
             <li><a href="mail.html">Link do poczty</a></li>            
-            <li><a href="INST_HTM_technik_2026.pdf">Link do ściągania pliku</a></li>            
+            <li><a href="INST_HTM_technik_2024.pdf">Link do ściągania pliku</a></li>            
             <li><a href="#srodek">Link do środka tekstu</a></li>            
             <li><a href="#dol">Link do końca tekstu</a></li>            
             <li><a href="tabela_baradziej.html">Link do strony zawierającej tabelę</a></li>            
@@ -29,40 +46,43 @@
 
     <hr>
 
-    <p align="right"> <font color="blue" size="7" face="Arial"> Paweł </font> </p> <br>      
-    <p align="right"> <font color="blue" size="6" face="Arial"> Paweł </font> </p> <br>      
-    <p align="right"> <font color="blue" size="5" face="Arial"> Paweł </font> </p> <br>      
-    <p align="right"> <font color="blue" size="4" face="Arial"> Paweł </font> </p> <br>      
-    <p align="right"> <font color="blue" size="3" face="Arial"> Paweł </font> </p> <br>      
-    <p align="right"> <font color="blue" size="2" face="Arial"> Paweł </font> </p> <br>      
-    <p align="right"> <font color="blue" size="1" face="Arial"> Paweł </font> </p> <br> 
+    <div class="sekcja-gora">
+        <p align="right"> <font color="blue" size="7" face="Arial"> Paweł </font> </p>      
+        <p align="right"> <font color="blue" size="6" face="Arial"> Paweł </font> </p>      
+        <p align="right"> <font color="blue" size="5" face="Arial"> Paweł </font> </p>      
+        <p align="right"> <font color="blue" size="4" face="Arial"> Paweł </font> </p>      
+        <p align="right"> <font color="blue" size="3" face="Arial"> Paweł </font> </p>      
+        <p align="right"> <font color="blue" size="2" face="Arial"> Paweł </font> </p>      
+        <p align="right"> <font color="blue" size="1" face="Arial"> Paweł </font> </p> 
 
-    <h6> Baradziej </h6><br>     
-    <h5> Baradziej </h5><br>    
-    <h4> Baradziej </h4><br>    
-    <h3> Baradziej </h3><br>    
-    <h2> Baradziej </h2><br>    
-    <h1> Baradziej </h1><br>
+        <h6> Baradziej </h6>
+        <h5> Baradziej </h5>
+        <h4> Baradziej </h4>
+        <h3> Baradziej </h3>
+        <h2> Baradziej </h2>
+        <h1> Baradziej </h1>
 
-    <p align="right"> <font color="maroon" size="1" face="Arial"> :) uśmiech </font> </p> <br>    
-    <p align="right"> <font color="black" size="2" face="Arial"> ;) uśmiech z przymrużeniem oka </font> </p> <br>    
-    <p align="right"> <font color="silver" size="4" face="Arial"> :C duży smutek </font> </p> <br>    
-    <p align="right"> <font color="purple" size="5" face="Courier New"> :C duży smutek </font> </p> <br>        
+        <p align="right"> <font color="maroon" size="1" face="Arial"> :) uśmiech </font> </p>    
+        <p align="right"> <font color="black" size="2" face="Arial"> ;) uśmiech z przymrużeniem oka </font> </p>    
+        <p align="right"> <font color="silver" size="4" face="Arial"> :C duży smutek </font> </p>    
+        <p align="right"> <font color="purple" size="5" face="Courier New"> :C duży smutek </font> </p>        
+    </div>
 
+    <!-- ================= ŚRODEK ================= -->
     <div id="srodek"></div>
     <div class="katalog-nawigacja">        
         środek strony<br>
         <ul>            
             <li><a href="mail.html">Link do poczty</a></li>            
-            <li><a href="INST_HTM_technik_2026.pdf">Link do ściągania pliku</a></li>            
+            <li><a href="INST_HTM_technik_2024.pdf">Link do ściągania pliku</a></li>            
             <li><a href="#gora">Link początek tekstu</a></li>            
             <li><a href="#dol">Link do końca tekstu</a></li>            
             <li><a href="tabela_baradziej.html">Link do strony zawierającej tabelę</a></li>            
             <li><a href="formulaz.html">Link do strony zawierającej formularz</a></li>        
         </ul>    </div>
 
-    <p align="right"> <font color="green" size="6" face="Times New Roman"> ;( lub :'( płacz </font> </p> <br>    
-    <p align="right"> <font color="lime" size="7" face="Verdana"> :P pokazanie języka </font> </p> <br>
+    <p align="right"> <font color="green" size="6" face="Times New Roman"> ;( lub :'( płacz </font> </p>    
+    <p align="right"> <font color="lime" size="7" face="Verdana"> :P pokazanie języka </font> </p>
 
     <div class="ramka">
         <div class="tytul"> Żart o informatyku </div>
@@ -99,14 +119,57 @@
         </div>
     </div>
 
+    <!-- SEKCJA Z ZADANIA 4: WYLICZENIA I NUMEROWANIA (W PROSTOKĄTNEJ RAMCE NA ŚRODKU) -->
+    <div class="sekcja-zadan">
+        <h3>WYLICZENIA</h3>
+        <h3>Ty zaproponuj swoje, związane z informatyką</h3>
+        <ul>
+            <li><b>Pogrubienie:</b> &lt;b&gt; &lt;/b&gt;</li>
+            <li><b>Kursywa:</b> &lt;i&gt; &lt;/i&gt;</li>
+            <li><b>Podkreślenie:</b> &lt;u&gt; &lt;/u&gt;</li>
+        </ul>
+
+        <br>
+        <h3>Poniżej są trzy numerowania z różnymi znakami numerowania</h3>
+        <h3>Ty zaproponuj swoje, związane z informatyką</h3>
+        <ol type="I">
+            <li>Nagłówki w treści strony WWW (&lt;h1&gt; do &lt;h6&gt;).</li>
+            <li>Możliwości funkcji font (&lt;font size&gt;, &lt;font color&gt;).</li>
+            <li>Najprostsze rodzaje kolorów (Nazwa, RGB, Hex).</li>
+        </ol>
+
+        <br>
+        <h3>Poniżej będą trzy poziomy numerowania/wyliczenia z różnymi rodzajami numerowania/wyliczenia</h3>
+        <h3>Ty zaproponuj swoje, związane z informatyką</h3>
+        <ol>
+            <li>Popularne interfejsy urządzeń peryferyjnych do komputera:
+                <ol type="A">
+                    <li>Interfejsy na przesył obrazu:
+                        <ol type="I">
+                            <li>HDMI</li>
+                            <li>DVI</li>
+                            <li>D-SUB</li>
+                        </ol>
+                    </li>
+                    <li>Interfejsy na przesył audio:
+                        <ul>
+                            <li>Jack 3,5mm</li>
+                        </ul>
+                    </li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+
+    <!-- ================= DÓŁ ================= -->
     <div id="dol"></div>    
     <div class="katalog-nawigacja">        
         dół strony<br>
         <ul>            
             <li><a href="mail.html">Link do poczty</a></li>            
-            <li><a href="INST_HTM_technik_2026.pdf">Link do ściągania pliku</a></li>            
+            <li><a href="INST_HTM_technik_2024.pdf">Link do ściągania pliku</a></li>            
             <li><a href="#gora">Link początek tekstu</a></li>            
-            <li><a href="#srodek">Link do środka tekstu</a></li>            
+            <li><a href="#dol">Link do końca tekstu</a></li>            
             <li><a href="tabela_baradziej.html">Link do strony zawierającej tabelę</a></li>            
             <li><a href="formulaz.html">Link do strony zawierającej formularz</a></li>        
         </ul>    </div>
