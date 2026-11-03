@@ -3,17 +3,36 @@
 
         .sekcja-gora {            margin-bottom: 30px;            line-height: 1.6;        }
 
-        /* Style list z Zadania 4 w wąskiej ramce na środku */
-        .sekcja-zadan {
+        /* Pierwsza ramka – szare tło, standardowy tekst */
+        .sekcja-szara {
             width: 800px;
             max-width: 100%;
-            margin: 30px auto;
+            margin: 20px auto;
             padding: 25px;
             background: #c0c0c0;
             border: 1px solid #000;
             box-sizing: border-box;
             font-family: Arial, sans-serif;
             font-size: 14px;
+            color: #000;
+        }
+
+        /* Druga ramka – szare tło, jaskrawo-niebieski tekst */
+        .sekcja-jaskrawa {
+            width: 800px;
+            max-width: 100%;
+            margin: 20px auto;
+            padding: 25px;
+            background: #c0c0c0;
+            border: 1px solid #000;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #00ffff;
+        }
+
+        .sekcja-jaskrawa h3 {
+            color: #00ffff;
         }
 
         .ramka {            position: relative;            width: 100%;            height: 265px;            margin-bottom: 25px;            background: #c0c0c0;            border: 1px solid black;            box-sizing: border-box;            padding: 45px 10px 20px 10px;        }
@@ -119,9 +138,9 @@
         </div>
     </div>
 
-    <!-- SEKCJA Z ZADANIA 4: WYLICZENIA I NUMEROWANIA (W PROSTOKĄTNEJ RAMCE NA ŚRODKU) -->
-    <div class="sekcja-zadan">
-        <h3>WYLICZENIA</h3>
+    <!-- PIERWSZA RAMKA: SZARA, ZWYKŁY TEKST -->
+    <div class="sekcja-szara">
+        <h3>Poniżej są trzy wyliczenia z różnymi znakami wyliczenia</h3>
         <h3>Ty zaproponuj swoje, związane z informatyką</h3>
         <ul>
             <li><b>Pogrubienie:</b> &lt;b&gt; &lt;/b&gt;</li>
@@ -137,24 +156,70 @@
             <li>Możliwości funkcji font (&lt;font size&gt;, &lt;font color&gt;).</li>
             <li>Najprostsze rodzaje kolorów (Nazwa, RGB, Hex).</li>
         </ol>
+    </div>
 
-        <br>
+    <!-- DRUGA RAMKA: SZARA, JASKRAWO-NIEBIESKI TEKST -->
+    <div class="sekcja-jaskrawa">
         <h3>Poniżej będą trzy poziomy numerowania/wyliczenia z różnymi rodzajami numerowania/wyliczenia</h3>
         <h3>Ty zaproponuj swoje, związane z informatyką</h3>
-        <ol>
+        <ol start="2">
             <li>Popularne interfejsy urządzeń peryferyjnych do komputera:
-                <ol type="A">
+                <ol type="A" start="2">
                     <li>Interfejsy na przesył obrazu:
-                        <ol type="I">
-                            <li>HDMI</li>
-                            <li>DVI</li>
-                            <li>D-SUB</li>
+                        <ol type="I" start="2">
+                            <li>HDMI
+                                <ul>
+                                    <li>Type A- Standard</li>
+                                    <li>Type B- Dual-Link</li>
+                                    <li>Type C- Mini</li>
+                                    <li>Type D- Micro</li>
+                                    <li>Type E- Zawiera blokującą ochronę aby kabel Typu Standard się nie ruszał</li>
+                                </ul>
+                            </li>
+                            <li>DVI
+                                <ul>
+                                    <li>DVI-I- Przesyła dane cyfrowe i analogowe</li>
+                                    <li>DVI-D- Przesyła dane cyfrowe</li>
+                                    <li>DVI-A- Przesyła dane analogowe</li>
+                                </ul>
+                            </li>
+                            <li>D-SUB
+                                <ul>
+                                    <li>DE-9- Standard</li>
+                                    <li>DE-9M- Standard bez śrub mocujących</li>
+                                    <li>DA-15- Złącze GamePort</li>
+                                    <li>DE-15F- Złącze VGA, SVGA i XGA</li>
+                                </ul>
+                            </li>
                         </ol>
                     </li>
-                    <li>Interfejsy na przesył audio:
-                        <ul>
-                            <li>Jack 3,5mm</li>
-                        </ul>
+                    <li style="list-style-type: none;">
+                        <ol type="A" start="3">
+                            <li>Interfejsy na przesył audio:
+                                <ol type="I" start="2">
+                                    <li>Jack
+                                        <ul>
+                                            <li>Jack 6,3mm</li>
+                                            <li>Jack 3,5mm (minijack)</li>
+                                            <li>Jack 2,5mm (microjack)</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>Interfejsy na przesył danych:
+                                <ol type="I" start="2">
+                                    <li>USB
+                                        <ul>
+                                            <li>Type A (USB 1.0 & 2.0)</li>
+                                            <li>Type B (USB 1.0 & 2.0)</li>
+                                            <li>Mini A (USB 2.0)</li>
+                                            <li>Mini B (USB 2.0)</li>
+                                            <li>Mini AB (USB 2.0)</li>
+                                        </ul>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
                     </li>
                 </ol>
             </li>
