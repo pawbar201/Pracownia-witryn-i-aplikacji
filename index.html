@@ -1,35 +1,70 @@
-<!DOCTYPE HTML><html lang="pl-PL"><head>    <meta charset="utf-8">    <title>Baradziej</title>    <style>        body {            margin: 0;            padding: 12px 37px;            font-family: "Times New Roman", serif;            background: white;        }                /* Styl nawigacji */        .katalog-nawigacja {            margin-bottom: 10px;            font-family: Arial, sans-serif;        }        .katalog-nawigacja ul {            list-style-type: disc;            padding-left: 20px;        }        .katalog-nawigacja li {            margin-bottom: 5px;        }        .katalog-nawigacja a {            color: blue;            text-decoration: underline;            cursor: pointer;        }
-
-        .powrot {            margin: 15px 0;            font-family: Arial, sans-serif;            font-size: 14px;        }        .powrot a {            color: blue;            text-decoration: underline;            cursor: pointer;        }
+<!DOCTYPE HTML><html lang="pl-PL"><head>    <meta charset="utf-8">    <title>Baradziej</title>    <style>        body {            margin: 0;            padding: 12px 37px;            font-family: "Times New Roman", serif;            background: white;        }                /* Styl nawigacji */        .katalog-nawigacja {            margin-bottom: 15px;            font-family: Arial, sans-serif;        }        .katalog-nawigacja ul {            list-style-type: disc;            padding-left: 20px;        }        .katalog-nawigacja li {            margin-bottom: 3px;        }        .katalog-nawigacja a {            color: blue;            text-decoration: underline;            cursor: pointer;        }
 
         .ramka {            position: relative;            width: 100%;            height: 265px;            margin-bottom: 23px;            background: #c0c0c0;            border: 1px solid black;            box-sizing: border-box;            padding: 45px 10px 20px 10px;        }
         .tytul {            position: absolute;            top: 48px;            left: 10px;            font-size: 25px;            font-weight: bold;        }
         .srodek {            left: 50%;            transform: translateX(-50%);        }
         .prawa {            left: auto;            right: 10px;        }
         .tresc {            position: absolute;            top: 128px;            left: 10px;            right: 10px;            border: 1px solid #999;            padding: 10px;            font-size: 14px;            line-height: 1.4;            box-sizing: border-box;            background: white;        }
-        /* KRESKA 1 */
+        
         .pasek1 {            position: absolute;            bottom: 15px;            right: 30px;            width: 40%;            height: 8px;            background: green;            border-radius: 4px;        }
-        /* KRESKA 2 */
         .pasek2 {            position: absolute;            top: 20px;            left: 30px;            width: 50%;            height: 8px;            background: red;            border-radius: 4px;        }
-        /* KRESKA 3 */
         .pasek3 {            position: absolute;            bottom: 25px;            left: 25%;            width: 50%;            height: 8px;            background: blue;            border-radius: 4px;        }
+
         .dane {            position: absolute;            left: 10px;            bottom: 22px;            font-size: 14px;        }
         .dane div {            display: inline-block;            margin-right: 35px;        }
     </style>
 </head><body>
-    <!-- KOTWICA: GÓRA STRONY -->    <div id="gora"></div>
-    <!-- NAWIGACJA -->    <div class="katalog-nawigacja">        <ul>            <li><a href="#gora">Góra strony</a></li>            <li><a href="#srodek">Środek strony</a></li>            <li><a href="formulaz.html">FORMULAZ</a></li>            <li><a href="walidacja.html">Walidacja strony</a></li>            <li><a href="mail.html">mail</a></li>            <li><a href="#dol">Dół strony</a></li>        </ul>    </div>
+
+    <div id="gora"></div>
+    <div class="katalog-nawigacja">        
+        góra strony:<br>
+        <ul>            
+            <li><a href="mail.html">Link do poczty</a></li>            
+            <li><a href="INST_HTM_technik_2024.pdf">Link do ściągania pliku</a></li>            
+            <li><a href="#srodek">Link do środka tekstu</a></li>            
+            <li><a href="#dol">Link do końca tekstu</a></li>            
+            <li><a href="tabela_baradziej.html">Link do strony zawierającej tabelę</a></li>            
+            <li><a href="formulaz.html">Link do strony zawierającej formularz</a></li>        
+        </ul>    </div>
 
     <hr>
-    <!-- TEKSTY NAGŁÓWKOWE I FONTOWE -->
-    <p align="right"> <font color="blue" size="7" face="Arial"> Paweł </font> </p> <br>      <p align="right"> <font color="blue" size="6" face="Arial"> Paweł </font> </p> <br>      <p align="right"> <font color="blue" size="5" face="Arial"> Paweł </font> </p> <br>      <p align="right"> <font color="blue" size="4" face="Arial"> Paweł </font> </p> <br>      <p align="right"> <font color="blue" size="3" face="Arial"> Paweł </font> </p> <br>      <p align="right"> <font color="blue" size="2" face="Arial"> Paweł </font> </p> <br>      <p align="right"> <font color="blue" size="1" face="Arial"> Paweł </font> </p> <br> 
-    <h6> Baradziej </h6><br>     <h5> Baradziej </h5><br>    <h4> Baradziej </h4><br>    <h3> Baradziej </h3><br>    <h2> Baradziej </h2><br>    <h1> Baradziej </h1><br>
-    <p align="right"> <font color="maroon" size="1" face="Arial"> :) uśmiech </font> </p> <br>    <p align="right"> <font color="black" size="2" face="Arial"> ;) uśmiech z przymrużeniem oka </font> </p> <br>    <p align="right"> <font color="silver" size="4" face="Arial"> :C duży smutek </font> </p> <br>    <p align="right"> <font color="purple" size="5" face="Courier New"> :C duży smutek </font> </p> <br>        <!-- KOTWICA: ŚRODEK STRONY -->
+
+    <p align="right"> <font color="blue" size="7" face="Arial"> Paweł </font> </p> <br>      
+    <p align="right"> <font color="blue" size="6" face="Arial"> Paweł </font> </p> <br>      
+    <p align="right"> <font color="blue" size="5" face="Arial"> Paweł </font> </p> <br>      
+    <p align="right"> <font color="blue" size="4" face="Arial"> Paweł </font> </p> <br>      
+    <p align="right"> <font color="blue" size="3" face="Arial"> Paweł </font> </p> <br>      
+    <p align="right"> <font color="blue" size="2" face="Arial"> Paweł </font> </p> <br>      
+    <p align="right"> <font color="blue" size="1" face="Arial"> Paweł </font> </p> <br> 
+
+    <h6> Baradziej </h6><br>     
+    <h5> Baradziej </h5><br>    
+    <h4> Baradziej </h4><br>    
+    <h3> Baradziej </h3><br>    
+    <h2> Baradziej </h2><br>    
+    <h1> Baradziej </h1><br>
+
+    <p align="right"> <font color="maroon" size="1" face="Arial"> :) uśmiech </font> </p> <br>    
+    <p align="right"> <font color="black" size="2" face="Arial"> ;) uśmiech z przymrużeniem oka </font> </p> <br>    
+    <p align="right"> <font color="silver" size="4" face="Arial"> :C duży smutek </font> </p> <br>    
+    <p align="right"> <font color="purple" size="5" face="Courier New"> :C duży smutek </font> </p> <br>        
+
     <div id="srodek"></div>
-    <div class="powrot"><a href="#gora">wróć</a></div>
-    <p align="right"> <font color="green" size="6" face="Times New Roman"> ;( lub :'( płacz </font> </p> <br>    <p align="right"> <font color="lime" size="7" face="Verdana"> :P pokazanie języka </font> </p> <br>
-    <!-- RAMKI Z ŻARTAMI -->
-    <div class="ramka 1">
+    <div class="katalog-nawigacja">        
+        środek strony<br>
+        <ul>            
+            <li><a href="mail.html">Link do poczty</a></li>            
+            <li><a href="INST_HTM_technik_2024.pdf">Link do ściągania pliku</a></li>            
+            <li><a href="#gora">Link początek tekstu</a></li>            
+            <li><a href="#dol">Link do końca tekstu</a></li>            
+            <li><a href="tabela_baradziej.html">Link do strony zawierającej tabelę</a></li>            
+            <li><a href="formulaz.html">Link do strony zawierającej formularz</a></li>        
+        </ul>    </div>
+
+    <p align="right"> <font color="green" size="6" face="Times New Roman"> ;( lub :'( płacz </font> </p> <br>    
+    <p align="right"> <font color="lime" size="7" face="Verdana"> :P pokazanie języka </font> </p> <br>
+
+    <div class="ramka">
         <div class="tytul"> Żart o informatyku </div>
         <div class="tresc">             
             <b>Pewien informatyk poszedł na ryby.</b><br><br>
@@ -40,7 +75,8 @@
         </div>
         <div class="pasek1"></div>
     </div>
-    <div class="ramka 2">
+
+    <div class="ramka">
         <div class="tytul srodek"> Żart o informatyku </div>
         <div class="tresc">             
             <b>Jest impreza u informatyków, wódka leje się szerokimi pasmami. Dwóch hackerów pije bruderszafta.</b><br><br>
@@ -48,7 +84,8 @@
         </div>
         <div class="pasek2"></div>
     </div>
-    <div class="ramka ostatnia">
+
+    <div class="ramka">
         <div class="tytul prawa"> Żona programisty mówi: </div>
         <div class="tresc">
             <img src="ZDJECIA ITP/gif1.gif" align="right" border="0" alt="Grafika">             
@@ -61,8 +98,17 @@
             <div> <b>imię ucznia</b><br><br> Paweł </div> 
         </div>
     </div>
-    <div class="powrot"><a href="#gora">wróć</a></div>
-    <!-- KOTWICA: DÓŁ STRONY -->
+
     <div id="dol"></div>    
-    <div class="powrot"><a href="#gora">wróć</a></div>
+    <div class="katalog-nawigacja">        
+        dół strony<br>
+        <ul>            
+            <li><a href="mail.html">Link do poczty</a></li>            
+            <li><a href="INST_HTM_technik_2024.pdf">Link do ściągania pliku</a></li>            
+            <li><a href="#gora">Link początek tekstu</a></li>            
+            <li><a href="#srodek">Link do środka tekstu</a></li>            
+            <li><a href="tabela_baradziej.html">Link do strony zawierającej tabelę</a></li>            
+            <li><a href="formulaz.html">Link do strony zawierającej formularz</a></li>        
+        </ul>    </div>
+
 </body></html>
